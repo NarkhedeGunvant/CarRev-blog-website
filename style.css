@@ -1,0 +1,166 @@
+/* styles.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(45deg, #ff6f61, #ff9068);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#blog-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  cursor: pointer;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+#search-bar {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#search-button {
+  padding: 5px 10px;
+  background: #ff6f61;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  width: 200px;
+  background: #ff6f61;
+  padding: 10px;
+}
+
+#sidebar {
+  list-style: none;
+  padding: 20px 0 0; /* Add padding to shift the titles down */
+}
+
+#sidebar li {
+  margin: 10px 0;
+}
+
+#sidebar li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#blogs {
+  flex: 1;
+  padding: 20px;
+}
+
+article {
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.comment-section {
+  margin-top: 20px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-form button {
+  padding: 10px 20px;
+  background: #ff6f61;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comment {
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: #ff6f61;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  display: none; /* Hidden by default */
+}
+
+@media (max-width: 768px) {
+  main {
+      flex-direction: column;
+  }
+
+  aside {
+      width: 100%;
+  }
+}
